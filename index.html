@@ -1,0 +1,134 @@
+<!-- CERITA LAPANGAN MODERN v3.0 - DARK MODE + COPY -->
+<style>
+  .cl-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    color: #0f172a;
+  }
+  .cl-bg-soft {
+    background: #f8fafc;
+  }
+  .cl-text-muted {
+    color: #64748b;
+  }
+  
+  /* DARK MODE OTOMATIS */
+  @media (prefers-color-scheme: dark) {
+    .cl-card {
+      background: #1e293b !important;
+      border-color: #334155 !important;
+      color: #f1f5f9 !important;
+    }
+    .cl-bg-soft {
+      background: #0f172a !important;
+    }
+    .cl-text-muted {
+      color: #94a3b8 !important;
+    }
+    .cl-shadow {
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3) !important;
+    }
+  }
+</style>
+
+<div style="max-width: 750px; margin: 30px auto; font-family: 'Inter', 'Segoe UI', sans-serif;" class="cl-bg-soft">
+  
+  <!-- HEADER CARD -->
+  <div style="background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%); padding: 32px; border-radius: 20px; margin-bottom: 28px;" class="cl-shadow">
+    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+      <span style="background: rgba(255,255,255,0.2); padding: 8px; border-radius: 10px; font-size: 20px;">📍</span>
+      <h2 style="margin: 0; color: white; font-size: 26px; font-weight: 700;">Cerita Lapangan</h2>
+    </div>
+    <div style="color: #dbeafe; font-size: 15px; display: flex; flex-wrap: wrap; gap: 16px;">
+      <span><b>Periode:</b> 9-15 Juni 2026</span>
+      <span><b>Lokasi:</b> Desa Sungai Tabuk, Banjarmasin</span>
+      <span><b>Kegiatan:</b> Rembuk Stunting</span>
+    </div>
+  </div>
+
+  <!-- KONTEN -->
+  <div style="display: grid; grid-template-columns: 1fr; gap: 20px;">
+    
+    <!-- RINGKASAN -->
+    <div class="cl-card" style="border-radius: 16px; padding: 24px;">
+      <h3 style="margin: 0 0 12px 0; font-size: 18px; display: flex; align-items: center; gap: 8px;">
+        <span style="color: #2563eb;">🎯</span> Ringkasan Kegiatan
+      </h3>
+      <p style="margin: 0; line-height: 1.7;" class="cl-text-muted">
+        Fasilitasi Rembuk Stunting tingkat desa di Balai Desa. Hadir 42 peserta dari Kades, BPD, bidan desa, kader, TP-PKK, dan perwakilan orang tua balita. Fokus membahas data E-PPGBM Mei 2026 dan menyepakati usulan prioritas untuk RKPDes 2026.
+      </p>
+    </div>
+
+    <!-- CAPAIAN + TOMBOL COPY -->
+    <div class="cl-card" style="border-radius: 16px; padding: 24px;">
+      <h3 style="margin: 0 0 16px 0; font-size: 18px; display: flex; align-items: center; gap: 8px;">
+        <span style="color: #16a34a;">📊</span> Capaian Utama
+      </h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+        <div style="background: rgba(22, 163, 74, 0.1); padding: 16px; border-radius: 12px;">
+          <div style="font-size: 28px; font-weight: 700; color: #16a34a;">4</div>
+          <div style="font-size: 14px;" class="cl-text-muted">Kegiatan prioritas disepakati</div>
+        </div>
+        <div style="background: rgba(22, 163, 74, 0.1); padding: 16px; border-radius: 12px;">
+          <div style="font-size: 28px; font-weight: 700; color: #16a34a;">12 ↓3</div>
+          <div style="font-size: 14px;" class="cl-text-muted">Balita stunting, turun 3</div>
+        </div>
+        <div style="background: rgba(37, 99, 235, 0.1); padding: 16px; border-radius: 12px;">
+          <div style="font-size: 14px; font-weight: 600; margin-bottom: 8px;">Berita Acara</div>
+          <div style="display: flex; gap: 8px;">
+            <a href="LINK_BA_KAMU" target="_blank" style="background: #2563eb; color: white; padding: 6px 12px; text-decoration: none; border-radius: 8px; font-size: 13px; font-weight: 500;">Unduh</a>
+            <button onclick="copyLink('LINK_BA_KAMU')" style="background: #475569; color: white; padding: 6px 12px; border: none; border-radius: 8px; font-size: 13px; font-weight: 500; cursor: pointer;">Copy Link</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TANTANGAN & SOLUSI -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+      <div class="cl-card" style="border-radius: 16px; padding: 24px;">
+        <h3 style="margin: 0 0 12px 0; font-size: 16px; color: #dc2626;">⚠️ Tantangan</h3>
+        <ul style="margin: 0; padding-left: 18px; line-height: 1.7; font-size: 15px;" class="cl-text-muted">
+          <li>2 RT belum aktif lapor posyandu</li>
+          <li>Mitos "stunting = keturunan" masih ada</li>
+        </ul>
+      </div>
+      <div class="cl-card" style="border-radius: 16px; padding: 24px;">
+        <h3 style="margin: 0 0 12px 0; font-size: 16px; color: #16a34a;">✅ Tindak Lanjut</h3>
+        <ul style="margin: 0; padding-left: 18px; line-height: 1.7; font-size: 15px;" class="cl-text-muted">
+          <li>Sweeping RT 02 & 05 minggu depan</li>
+          <li>Leaflet bahasa Banjar di pengajian</li>
+          <li>Usulan masuk Musdes RKPDes 20 Juni</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- DOKUMENTASI -->
+    <div class="cl-card" style="border-radius: 16px; padding: 24px;">
+      <h3 style="margin: 0 0 16px 0; font-size: 18px; display: flex; align-items: center; gap: 8px;">
+        <span style="color: #7c3aed;">🖼️</span> Dokumentasi
+      </h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px;">
+        <img src="LINK_GAMBAR_1" alt="Diskusi Rembuk Stunting" style="width: 100%; border-radius: 12px; aspect-ratio: 16/9; object-fit: cover;" />
+        <img src="LINK_GAMBAR_2" alt="Penandatanganan BA" style="width: 100%; border-radius: 12px; aspect-ratio: 16/9; object-fit: cover;" />
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <p style="margin: 24px 0 0 0; font-size: 13px; text-align: center;" class="cl-text-muted">
+    #CeritaLapangan #RembukStunting #DesaSungaiTabuk #PendampingDesa
+  </p>
+</div>
+
+<!-- SCRIPT TOMBOL COPY -->
+<script>
+function copyLink(link) {
+  navigator.clipboard.writeText(link).then(function() {
+    alert('Link Berita Acara berhasil disalin! 📋');
+  }, function() {
+    alert('Gagal copy. Coba klik kanan → Copy link address');
+  });
+}
+</script>
+<!-- AKHIR TEMPLATE -->
